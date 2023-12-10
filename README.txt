@@ -22,15 +22,19 @@ Your application must rely on at least one API. Some API resources (you are not 
 
 
 What we are implementing 
+
 changing and loading pages (node + express)
+
+API BoredAPI -> tells you what you can add to your todo list
+
 website.com/ <-- create account or sign in page
     - css
 website.com/create <-- register here
     - form
     - css
-website.com/:userID <-- access to-do list here
+website.com/:userID <-- access to-do list here (MongoDB)
     - css
-website.come/login <-- sign in here
+website.come/login <-- sign in here (provide data)
     - css
 
 server.js
@@ -60,12 +64,11 @@ API links - Links to API(s) you are using.
 YouTube Demo Video - Link to a YouTube video that provides a demo of your application. This video is very important. We will not grade a project unless a video is provided.
 
 
-
 Team Members -
     Wadood Butt (wbutt)
     Param Machre (pmachre)
     Tony Vu (tvu2)
 
 App Description - 
-API Links -
+API Links - https://www.boredapi.com/
 Youtube Demo Video - 
