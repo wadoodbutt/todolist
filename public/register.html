@@ -7,5 +7,50 @@
 </head>
 <body>
     
+    <!-- FORM USED TO REGISTER -->
+    <form action="/registerSubmit" method="post" id="register">
+
+        <fieldset>
+
+            <!-- First and Last name -->
+            <label>First Name: <input type="text" name="first_name"></label>
+            <label>Last Name: <input type="text" name="last_name"></label>
+
+            <br>
+            <br>
+            
+            <!-- USERID -->
+            <label>User ID: <input type="text" name="userid"></label>
+
+            <br>
+            <br>
+
+            <!-- PASSWORD -->
+            <label>Password: <input type="text" name="password"></label>
+
+            <br>
+            <br>
+
+            <!-- email address -->
+            <label>Email Address: <input type="email" name="email"></label>
+
+            <br>
+            <br>
+            
+            <!-- phone number will be required -->
+            <label>Phone: 
+                <input type="text" size="3" maxlength="3" name="phoneFirstPart" id="phoneFirst" required>  
+                <strong>-</strong> <input type="text" size="3" maxlength="3" name="phoneSecondPart" id="phoneSec" required>  
+                <strong>-</strong> <input type="text" size="4" maxlength="4" name="phoneThirdPart" id="phoneThird" required>
+            </label>         
+            
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+
+
+
+
+
 </body>
 </html>
