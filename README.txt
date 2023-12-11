@@ -21,7 +21,7 @@ Your application must rely on at least one API. Some API resources (you are not 
 
 
 
-What we are implementing 
+What we are implementing
 
 changing and loading pages (node + express)
 
@@ -39,7 +39,7 @@ website.come/login <-- sign in here (provide data)
 
 server.js
     - backend
-    
+
 /
     - index
     - home page
@@ -66,9 +66,9 @@ YouTube Demo Video - Link to a YouTube video that provides a demo of your applic
 
 Team Members -
     Wadood Butt (wbutt)
-    Param Machre (pmachre)
+    Paramraj Singh Machre (pmachre)
     Tony Vu (tvu2)
 
-App Description - 
+App Description -
 API Links - https://www.boredapi.com/
-Youtube Demo Video - 
+Youtube Demo Video -

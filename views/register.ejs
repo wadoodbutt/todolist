@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/styles/register.css" />
+  </head>
+  <body>
+    <!-- FORM USED TO REGISTER -->
+    <form action="/registerSubmit" method="post" id="register">
+      <h1>Register</h1>
+      <!-- First and Last name REQUIRED -->
+      <label
+        >First Name: <input type="text" name="first_name" required
+      /></label>
+      <br /><br />
+      <label>Last Name: <input type="text" name="last_name" required /></label>
+
+      <br />
+      <br />
+
+      <!-- USERID REQUIRED -->
+      <label>User ID: <input type="text" name="userid" required /></label>
+
+      <br />
+      <br />
+
+      <!-- PASSWORD REQUIRED  -->
+      <label>Password: <input type="text" name="password" required /></label>
+      <br /><br />
+      <label
+        >Confirm Password: <input type="password" name="confirm_pass" required
+      /></label>
+
+      <br />
+      <br />
+
+      <!-- email address REQUIRED -->
+      <label>Email Address: <input type="email" name="email" required /></label>
+
+      <br />
+      <br />
+
+      <!-- phone number -->
+      <label
+        >Phone:
+        <input
+          type="text"
+          size="3"
+          maxlength="3"
+          name="phoneFirstPart"
+          id="phoneFirst"
+        />
+        <strong>-</strong>
+        <input
+          type="text"
+          size="3"
+          maxlength="3"
+          name="phoneSecondPart"
+          id="phoneSec"
+        />
+        <strong>-</strong>
+        <input
+          type="text"
+          size="4"
+          maxlength="4"
+          name="phoneThirdPart"
+          id="phoneThird"
+        />
+      </label>
+
+      <br />
+
+      <input type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>

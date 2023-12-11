@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-parser"); 
+const bodyParser = require("body-parser");
 const app = express();
 const dotenv = require('dotenv').config({ path: './.env' });
 
@@ -30,7 +30,15 @@ app.set("view engine", "ejs");
 app.listen(3000);
 
 app.get("/", (req, res) => {
-    res.render("index")
+    res.render("index");
+});
+
+app.get("/login", (req, res) => {
+    res.render("login");
+});
+
+app.get("/register", (req, res) => {
+    res.render("register");
 });
 
 const prompt = "Web server started and running at http://localhost:3000/";

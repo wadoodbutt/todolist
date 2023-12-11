@@ -1,7 +1,39 @@
-#test {
-    color: red;
+body {
+  font-family: "Arial", sans-serif;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.test2 {
-    color: blue
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: grey;
+  background-color: lightblue;
+  border-radius: 4px;
+  width: 20%;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: mediumaquamarine;
 }
