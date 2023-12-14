@@ -10,7 +10,36 @@
 	<div>
 		<%- info %>
         <hr>
+	
+		<button id="getActivity">Get Activity</button>
+		<p id="activity"></p>
 	</div>
+
+
+	<script>
+
+		// getting activity from bored api
+		const getActivity = document.getElementById('getActivity');
+		const activityp = document.getElementById('activity');
+
+		// on click 
+		getActivity.addEventListener('click', () => {
+		
+			// get the activity
+		fetch('https://www.boredapi.com/api/activity')
+			.then(response => response.json())
+			.then(data => {
+				// put into html
+				activityp.textContent = `Activity: ${data.activity}`;
+			})
+			.catch(error => {
+				// on fail
+			console.log('Error fetching data:', error);
+				activityp.textContent = 'Failed to fetch activity. Please try again.';
+			});
+		});
+
+	</script>
 
 </body>
 

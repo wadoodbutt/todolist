@@ -41,5 +41,6 @@ app.get("/register", (req, res) => {
     res.render("register");
 });
 
+
 const prompt = "Web server started and running at http://localhost:3000/";
 process.stdout.write(prompt);
