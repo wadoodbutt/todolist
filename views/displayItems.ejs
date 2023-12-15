@@ -8,7 +8,19 @@
 
 <body>
 	<div>
-		<%- info %>
+		<h1>Welcome, <%- name %>!</h1>
+
+		<%- tbltask %>
+
+		<br>
+		<div>
+			<form action="/add" method="post" id="add">
+				<input id="addTasks" value="Add Task" type="submit">
+				<input type="text" name="task" id="tsk">
+				<br><br>
+				<input type="button" onclick="clearAll()" value="Clear Tasks" id="clearTasks">
+			</form>
+		</div>
         <hr>
 	
 		<button id="getActivity">Get Activity</button>
@@ -17,6 +29,11 @@
 
 
 	<script>
+
+		const clearAll = () => {
+			document.getElementById('tsk').value = "Delete All";
+			document.getElementById('add').submit();
+		}
 
 		// getting activity from bored api
 		const getActivity = document.getElementById('getActivity');
@@ -38,6 +55,11 @@
 				activityp.textContent = 'Failed to fetch activity. Please try again.';
 			});
 		});
+
+		// Adds task
+		const addTask = () => {
+			
+		}
 
 	</script>
 
