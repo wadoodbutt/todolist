@@ -156,16 +156,3 @@ app.post("/add", async (req, res) => {
 
 const prompt = "Web server started and running at http://localhost:3000/";
 process.stdout.write(prompt);
-process.stdin.on("readable", function () {
-    let input = process.stdin.read().trim();
-    if (input !== null) {
-        if (input === "stop") {
-            process.stdout.write("Shutting down the server");
-            process.exit(0);
-        } else {
-            process.stdout.write(`Invalid command: ${input}\n`);
-            process.stdout.write(prompt);
-            process.stdin.resume();
-        }
-    }
-});
